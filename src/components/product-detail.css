@@ -1,0 +1,122 @@
+.product-detail {
+  display: flex;
+    width: 90%;
+  /* gap: 2rem; */
+  flex-wrap: wrap;
+  margin: 10px auto 50px;
+
+}
+
+.product-images {
+  flex: 1.5;
+  display: flex;
+}
+
+.main-image {
+width: 80%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+.images img.active {
+  border: 2px solid #0d6efd;  
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  padding: 2rem 2rem 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  background: #0077b6;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #000;
+}
+.product-info h2{
+    text-align: center;
+    font-size: 34px;
+   color: #f9c74f;
+   text-shadow: 0 0 10px #000;
+}
+.product-info .info{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.info p{
+    font-size: 16px;
+    color: #90e0ef;
+}
+
+
+
+
+
+
+.product-info h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #1f363d;
+}
+
+.options button {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #0077b6;
+  padding: 6px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.options button.active {
+  border-color: white;
+  background-color: #0077b6;
+  color: white;
+}
+
+.options button:hover {
+  transform: translateY(-2px);
+}
+.product-info .add{
+    margin-top: 60px;
+    
+    margin-bottom: 0;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding:12px;
+    background: transparent;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.product-info .add:hover{
+    background: #fff;
+    color: #0077b6;
+    
+}

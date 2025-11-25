@@ -1,0 +1,24 @@
+.filter-buttons{
+    display: flex;
+    margin: 4rem auto 3rem;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.filter-buttons button{
+    border: 1px solid  transparent;
+    padding: 7px 15px;
+    border-radius: 1.7rem;
+    transition: all 0.3s ease-in-out;
+    background: #9f9c8c;
+    color: white;
+    cursor: pointer;
+}
+.filter-buttons button:hover{
+    background: #1f7c8c;
+}
+.filter-buttons button.active{
+    background: white;
+    color: #9f9c8c;
+    border-color: #9f9c8c;
+}
+
